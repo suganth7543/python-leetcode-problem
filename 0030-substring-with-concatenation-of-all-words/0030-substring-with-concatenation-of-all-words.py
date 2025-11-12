@@ -1,42 +1,47 @@
-from collections import defaultdict
+class Solution(object):
+    def findSubstring(self, s, words):
+        numWords = len(words)
+        wordLength = len(words[0])
+        frequency = {}
+        currentFrequency = {}
+        substrings = []
 
-class Solution:
-    def findSubstring(self, s , words) :
-        if not s or not words:
-            return []
+        for i in range(numWords):
+            if words[i] in frequency:
+                frequency[words[i]] += 1
+            else:
+                frequency[words[i]] = 1
         
-        word_len = len(words[0])
-        total_words = len(words)
-        total_len = word_len * total_words
-        word_count = defaultdict(int)
-        result = []
-        
-        for word in words:
-            word_count[word] += 1
-        
-        for i in range(word_len):
-            left = i
-            current_count = defaultdict(int)
-            count = 0
-            for j in range(i, len(s) - word_len + 1, word_len):
-                current_word = s[j:j + word_len]
-                if current_word in word_count:
-                    current_count[current_word] += 1
-                    count += 1
-                    while current_count[current_word] > word_count[current_word]:
-                        left_word = s[left:left + word_len]
-                        current_count[left_word] -= 1
-                        count -= 1
-                        left += word_len
-                    if count == total_words:
-                        result.append(left)
-                        left_word = s[left:left + word_len]
-                        current_count[left_word] -= 1
-                        count -= 1
-                        left += word_len
+        for i in range(max(wordLength % len(s), 1)):
+            currentWord = ""
+            currentFrequency = {}
+            start = i
+            wordsInSubstring = 0
+
+            for j in range(start, len(s) - wordLength + 1, wordLength):
+                currentWord = s[j: j + wordLength]
+                wordsInSubstring += 1
+                
+                if currentWord in frequency:
+                    if currentWord in currentFrequency:
+                        currentFrequency[currentWord] += 1
+                    else:
+                        currentFrequency[currentWord] = 1
+
+                    if currentFrequency == frequency:
+                        substrings.append(start)
+                        currentFrequency[s[start: start + wordLength]] -= 1
+                        start += wordLength
+                        wordsInSubstring -= 1
+                    elif wordsInSubstring == numWords:
+                        currentFrequency[s[start: start + wordLength]] -= 1
+                        start += wordLength
+                        wordsInSubstring -= 1
                 else:
-                    current_count.clear()
-                    count = 0
-                    left = j + word_len
+                    currentFrequency = {}
+                    start = j + wordLength
+                    wordsInSubstring = 0
+
+
+        return substrings
         
-        return result
