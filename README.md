@@ -8,10 +8,12 @@ python leetcode problem
 | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/suganth7543/python-leetcode-problem/tree/master/0021-merge-two-sorted-lists) |
 | [0023-merge-k-sorted-lists](https://github.com/suganth7543/python-leetcode-problem/tree/master/0023-merge-k-sorted-lists) |
+| [0024-swap-nodes-in-pairs](https://github.com/suganth7543/python-leetcode-problem/tree/master/0024-swap-nodes-in-pairs) |
 ## Recursion
 |  |
 | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/suganth7543/python-leetcode-problem/tree/master/0021-merge-two-sorted-lists) |
+| [0024-swap-nodes-in-pairs](https://github.com/suganth7543/python-leetcode-problem/tree/master/0024-swap-nodes-in-pairs) |
 ## String
 |  |
 | ------- |
