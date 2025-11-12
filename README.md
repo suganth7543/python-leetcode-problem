@@ -51,6 +51,7 @@ python leetcode problem
 | [0027-remove-element](https://github.com/suganth7543/python-leetcode-problem/tree/master/0027-remove-element) |
 | [0031-next-permutation](https://github.com/suganth7543/python-leetcode-problem/tree/master/0031-next-permutation) |
 | [0033-search-in-rotated-sorted-array](https://github.com/suganth7543/python-leetcode-problem/tree/master/0033-search-in-rotated-sorted-array) |
+| [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/suganth7543/python-leetcode-problem/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 ## Two Pointers
 |  |
 | ------- |
@@ -86,4 +87,5 @@ python leetcode problem
 |  |
 | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/suganth7543/python-leetcode-problem/tree/master/0033-search-in-rotated-sorted-array) |
+| [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/suganth7543/python-leetcode-problem/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 <!---LeetCode Topics End-->
