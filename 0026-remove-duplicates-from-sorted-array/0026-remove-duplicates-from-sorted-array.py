@@ -1,20 +1,12 @@
-class Solution(object):
+class Solution:
     def removeDuplicates(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        lst = []
-
-        if len(nums) == 1:
-            return 1
-
-        for indx in range(len(nums) - 1):
-            if indx == 0: 
-               lst.append(nums[indx])
-
-            if nums[indx] != nums[indx + 1]:
-                lst.append(nums[indx + 1])
-        nums[:] = lst
-        return len(nums)
-
+        if not nums:
+            return 0
+        
+        k = 1  # Initialize the count of unique elements to 1
+        for i in range(1, len(nums)):
+            if nums[i] != nums[i - 1]:
+                nums[k] = nums[i]  # Overwrite the next unique element
+                k += 1
+        
+        return k
