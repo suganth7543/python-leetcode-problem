@@ -21,6 +21,7 @@ python leetcode problem
 | ------- |
 | [0022-generate-parentheses](https://github.com/suganth7543/python-leetcode-problem/tree/master/0022-generate-parentheses) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/suganth7543/python-leetcode-problem/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
+| [0030-substring-with-concatenation-of-all-words](https://github.com/suganth7543/python-leetcode-problem/tree/master/0030-substring-with-concatenation-of-all-words) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -64,4 +65,12 @@ python leetcode problem
 |  |
 | ------- |
 | [0029-divide-two-integers](https://github.com/suganth7543/python-leetcode-problem/tree/master/0029-divide-two-integers) |
+## Hash Table
+|  |
+| ------- |
+| [0030-substring-with-concatenation-of-all-words](https://github.com/suganth7543/python-leetcode-problem/tree/master/0030-substring-with-concatenation-of-all-words) |
+## Sliding Window
+|  |
+| ------- |
+| [0030-substring-with-concatenation-of-all-words](https://github.com/suganth7543/python-leetcode-problem/tree/master/0030-substring-with-concatenation-of-all-words) |
 <!---LeetCode Topics End-->
