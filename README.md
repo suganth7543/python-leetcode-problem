@@ -47,12 +47,14 @@ python leetcode problem
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/suganth7543/python-leetcode-problem/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/suganth7543/python-leetcode-problem/tree/master/0027-remove-element) |
+| [0031-next-permutation](https://github.com/suganth7543/python-leetcode-problem/tree/master/0031-next-permutation) |
 ## Two Pointers
 |  |
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/suganth7543/python-leetcode-problem/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/suganth7543/python-leetcode-problem/tree/master/0027-remove-element) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/suganth7543/python-leetcode-problem/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
+| [0031-next-permutation](https://github.com/suganth7543/python-leetcode-problem/tree/master/0031-next-permutation) |
 ## String Matching
 |  |
 | ------- |
