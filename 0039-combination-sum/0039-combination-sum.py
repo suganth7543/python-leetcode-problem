@@ -1,16 +1,23 @@
 class Solution(object):
     def combinationSum(self, candidates, target):
+        """
+        :type candidates: List[int]
+        :type target: int
+        :rtype: List[List[int]]
+        """
         res = []
-        
-        def dfs(i, path, total):
-            if target == total:
-                res.append(list(path))
+        def backtrack(start, path, total):
+            if total == target:
+                res.append(path[:])
+                total = 0
                 return
-        
-            for j in range(i, len(candidates)):
-                if target >= candidates[j] + total:
-                    dfs(j, path + [candidates[j]], total + candidates[j])
-
-        dfs(0, [], 0)
-
+            if total > target:
+                total = 0
+                return
+            for i in range(start, len(candidates)):
+                path.append(candidates[i])
+                #total += candidates[i]
+                backtrack(i, path, total+candidates[i])
+                path.pop()
+        backtrack(start = 0, path=[], total = 0)
         return res
